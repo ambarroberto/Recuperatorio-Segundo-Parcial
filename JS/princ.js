@@ -15,3 +15,43 @@ const listaDatosCuriosos = [
 // --- Seleccion del elemento dom ---
 const elementoTextoDato = document.getElementById("texto-dato-curioso");
 const botonNuevoDato = document.getElementById("btn-nuevo-dato");
+
+// Variable para no repetir el mismo dato de forma consecutiva
+let ultimoIndice = -1;
+
+/**
+ * Selecciona un dato curioso al azar y actualiza el HTML evitando repeticiones inmediatas.
+ * Si la lista tiene un solo elemento, lo muestra directamente (evita loop).
+ */
+function mostrarDatoCuriosoAleatorio() {
+  if (!elementoTextoDato) return;
+
+  if (listaDatosCuriosos.length === 0) {
+    elementoTextoDato.textContent = "No hay datos curiosos disponibles por el momento.";
+    return;
+  }
+
+  let nuevoIndice;
+
+  if (listaDatosCuriosos.length === 1) {
+    nuevoIndice = 0;
+  } else {
+    // Genera un numero hasta que sea distinto al ultimo mostrado
+    do {
+      nuevoIndice = Math.floor(Math.random() * listaDatosCuriosos.length);
+    } while (nuevoIndice === ultimoIndice);
+  }
+
+  // Guarda el numero seleccionado
+  ultimoIndice = nuevoIndice;
+
+  // Modifica el contenido de texto en la pantalla
+  elementoTextoDato.textContent = listaDatosCuriosos[nuevoIndice];
+}
+
+// --- Asignacion de eventos ---
+// Se valida que el botón exista antes de escuchar el evento,
+// por si este script se reutiliza en una página sin este elemento.
+if (botonNuevoDato) {
+  botonNuevoDato.addEventListener("click", mostrarDatoCuriosoAleatorio);
+}

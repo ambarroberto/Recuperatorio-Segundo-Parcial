@@ -122,3 +122,77 @@ button:focus-visible {
   line-height: 1.5;
   margin-bottom: 0.8rem;
 }
+
+.seccion-dato-curioso {
+  text-align: center;
+  background-color: var(--color-fondo-dato);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.seccion-dato-curioso h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.contenedor-dato {
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#texto-dato-curioso {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-texto-oscuro);
+}
+
+.btn-destacado {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-destacado:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.pie-pagina {
+  text-align: center;
+  border-top: 1px solid var(--color-borde);
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-texto-gris-claro);
+}
+
+.pie-pagina a {
+  color: var(--color-titulo);
+  font-weight: bold;
+}
+
+:root {
+  --color-texto-oscuro: #222222;
+  --color-titulo: #111111;
+  --color-texto-medio: #333333;
+  --color-texto-gris: #555555;
+  --color-texto-gris-claro: #666666;
+  --color-borde: #cccccc;
+  --color-borde-claro: #dddddd;
+  --color-borde-tarjeta: #e0e0e0;
+  --color-fondo-tarjeta: #f8f8f8;
+  --color-fondo-dato: #eeeeee;
+  --color-acento: #222222;
+  --color-acento-hover: #444444;
+  --color-blanco: #ffffff;
+  --color-error: #b3261e;
+  --color-error-fondo: #fbeaea;
+  --color-exito: #1e6b3e;
+  --color-exito-fondo: #e9f5ee;
+}

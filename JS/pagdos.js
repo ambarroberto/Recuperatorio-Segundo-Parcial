@@ -1,30 +1,20 @@
 // --- Array de obras ---
 const listaObras = [
-  {
-    titulo: "O Superman",
+  {titulo: "O Superman",
     anio: 1981,
-    imagen: "../Img/OSuperman-5.jpg"
-  },
-  {
-    titulo: "Big Science",
+    imagen: "../Img/OSuperman-5.jpg"},
+  {titulo: "Big Science",
     anio: 1982,
-    imagen: "../Img/big-4.jpg"
-  },
-  {
-    titulo: "Four Talks",
+    imagen: "../Img/big-4.jpg"},
+  {titulo: "Four Talks",
     anio: 2021,
-    imagen: "../Img/anderson-1.jpg"
-  },
-  {
-    titulo: "Songs and Stories from Moby Dick",
+    imagen: "../Img/anderson-1.jpg"},
+  {titulo: "Songs and Stories from Moby Dick",
     anio: 1977,
-    imagen: "../Img/anderson-3.jpg"
-  },
-  {
-    titulo: "Chalkroom",
+    imagen: "../Img/anderson-3.jpg"},
+  {titulo: "Chalkroom",
     anio: 2017,
-    imagen: "../Img/anderson-2.jpg"
-  }
+    imagen: "../Img/anderson-2.jpg"}
 ];
 
 // --- Seleccion de elementos ---

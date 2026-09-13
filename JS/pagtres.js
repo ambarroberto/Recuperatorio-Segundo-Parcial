@@ -64,7 +64,7 @@ formConfig.addEventListener("submit", function (e) {
     isNaN(transf) || transf <= 0 ||
     isNaN(costo) || costo <= 0
   ) {
-    mostrarMensaje(errorConfiguracion, "Por favor ingrese valores numéricos mayores a cero en los tres campos.");
+    mostrarMensaje(errorConfiguracion, "Por favor ingrese valores numericos mayores a cero en los tres campos.");
     return;
   }
 

@@ -328,3 +328,74 @@ button:focus-visible {
 .grid-galeria.vista-ampliada .tarjeta-obra h3 {
   font-size: 1.15rem;
 }
+
+@media (max-width: 48rem) {
+  body {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .contenedor-principal {
+    padding: 1.25rem;
+  }
+
+  .encabezado-sitio h1 {
+    font-size: 2rem;
+  }
+
+  .layout-tres-columnas {
+    flex-direction: column;
+  }
+
+  .layout-dos-columnas {
+    flex-direction: column;
+  }
+
+  .columna-lateral {
+    flex: 1 1 auto;
+    width: 100%;
+    position: static;
+  }
+
+  .grid-galeria {
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  }
+
+  .menu-navegacion ul {
+    gap: 0.75rem;
+  }
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.seccion-instrucciones {
+  background-color: var(--color-fondo-dato);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.seccion-instrucciones h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-titulo);
+}
+
+.seccion-instrucciones p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.seccion-instrucciones ol {
+  padding-left: 1.25rem;
+  line-height: 1.6;
+}

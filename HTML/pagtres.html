@@ -39,5 +39,28 @@
       </ol>
     </section>
 
+     <section class="bloque-formulario">
+      <h3 class="titulo-google-font">Paso 1: Parámetros Generales</h3>
+      <form id="form-configuracion" novalidate>
+        <fieldset id="fieldset-configuracion">
+          <legend class="visualmente-oculto">Parámetros generales del servidor</legend>
+          <div class="campo-form">
+            <label for="cant-obras">Cantidad de obras a almacenar:</label>
+            <input type="number" id="cant-obras" min="1" step="1" required>
+          </div>
+          <div class="campo-form">
+            <label for="tiempo-transf">Tiempo de transferencia (ms por MB):</label>
+            <input type="number" id="tiempo-transf" min="0.01" step="any" required>
+          </div>
+          <div class="campo-form">
+            <label for="costo-mb">Costo de almacenamiento mensual por MB ($):</label>
+            <input type="number" id="costo-mb" min="0.01" step="any" required>
+          </div>
+          <p id="error-configuracion" class="mensaje-error" role="alert" hidden></p>
+          <button type="submit" id="btn-iniciar" class="btn-destacado">Iniciar Carga</button>
+        </fieldset>
+      </form>
+    </section>
+
 </body>
 </html>

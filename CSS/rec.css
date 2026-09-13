@@ -512,3 +512,39 @@ button:focus-visible {
   border-color: var(--color-borde);
   color: #aaaaaa;
 }
+
+@media (max-width: 48rem) {
+  .campo-form {
+    max-width: 100%;
+  }
+
+  .bloque-formulario {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .encabezado-sitio h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo-destacado {
+    font-size: 1rem;
+  }
+
+  .menu-navegacion a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+.imagen-artista {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.imagen-artista img {
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.2);
+}

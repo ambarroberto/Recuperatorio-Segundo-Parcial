@@ -48,7 +48,7 @@ button:focus-visible {
 
 .encabezado-sitio {
   text-align: center;
-  border-bottom: 1px solid var(--color-borde);
+  border-bottom: 0.0625rem solid var(--color-borde);
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -106,14 +106,14 @@ button:focus-visible {
   background-color: var(--color-fondo-tarjeta);
   padding: 1.25rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--color-borde-tarjeta);
+  border: 0.0625rem solid var(--color-borde-tarjeta);
 }
 
 .columna-tarjeta h2 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   color: var(--color-titulo);
-  border-bottom: 1px solid var(--color-borde-claro);
+  border-bottom: 0.0625rem solid var(--color-borde-claro);
   padding-bottom: 0.5rem;
 }
 
@@ -166,7 +166,7 @@ button:focus-visible {
 
 .pie-pagina {
   text-align: center;
-  border-top: 1px solid var(--color-borde);
+  border-top: 0.0625rem solid var(--color-borde);
   padding-top: 1.5rem;
   font-size: 0.9rem;
   color: var(--color-texto-gris-claro);
@@ -209,9 +209,7 @@ button:focus-visible {
   background-color: var(--color-fondo-tarjeta);
   padding: 1.25rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--color-borde-tarjeta);
-  flex: 0 0 30%;
-  top: 1.5rem;
+  border: 0.0625rem solid var(--color-borde-tarjeta);
 }
 
 .columna-lateral h2 {
@@ -234,7 +232,7 @@ button:focus-visible {
 .columna-lateral li {
   font-size: 0.9rem;
   padding: 0.4rem 0;
-  border-bottom: 1px solid var(--color-borde-claro);
+  border-bottom: 0.0625rem solid var(--color-borde-claro);
   color: var(--color-texto-medio);
 }
 
@@ -243,7 +241,7 @@ button:focus-visible {
 }
 
 .panel-diseno {
-  border-top: 1px solid var(--color-borde-claro);
+  border-top: 0.0625rem solid var(--color-borde-claro);
   padding-top: 1rem;
 }
 
@@ -285,7 +283,7 @@ button:focus-visible {
   flex: 0 1 11rem;  
   max-width: 11rem;  
   background-color: var(--color-fondo-tarjeta);
-  border: 1px solid var(--color-borde-tarjeta);
+  border: 0.0625 solid var(--color-borde-tarjeta);
   border-radius: 0.25rem;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -353,12 +351,12 @@ button:focus-visible {
   .columna-lateral {
     flex: 1 1 auto;
     width: 100%;
-    position: static;
   }
 
-  .grid-galeria {
-    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-  }
+ .tarjeta-obra {
+    flex: 0 1 9rem;
+    max-width: 9rem;
+  } 
 
   .menu-navegacion ul {
     gap: 0.75rem;
@@ -402,7 +400,7 @@ button:focus-visible {
 
 .bloque-formulario {
   background-color: var(--color-fondo-tarjeta);
-  border: 1px solid var(--color-borde-tarjeta);
+  border: 0.0625rem solid var(--color-borde-tarjeta);
   border-radius: 0.25rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -438,7 +436,7 @@ button:focus-visible {
   font-family: inherit;
   font-size: 0.95rem;
   padding: 0.55rem 0.75rem;
-  border: 1px solid var(--color-borde);
+  border: 0.0625rem solid var(--color-borde);
   border-radius: 0.25rem;
   background-color: var(--color-blanco);
   color: var(--color-texto-oscuro);
@@ -460,7 +458,7 @@ button:focus-visible {
 .mensaje-error {
   background-color: var(--color-error-fondo);
   color: var(--color-error);
-  border: 1px solid var(--color-error);
+  border: 0.0625rem solid var(--color-error);
   border-radius: 0.25rem;
   padding: 0.6rem 0.9rem;
   font-size: 0.9rem;
@@ -470,7 +468,7 @@ button:focus-visible {
 .mensaje-exito {
   background-color: var(--color-exito-fondo);
   color: var(--color-exito);
-  border: 1px solid var(--color-exito);
+  border: 0.0625rem solid var(--color-exito);
   border-radius: 0.25rem;
   padding: 0.6rem 0.9rem;
   font-size: 0.9rem;
@@ -479,7 +477,7 @@ button:focus-visible {
 
 .panel-resultados {
   background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde-tarjeta);
+  border: 0.0625rem solid var(--color-borde-tarjeta);
   border-radius: 0.25rem;
   padding: 1.25rem;
   margin: 1.25rem 0;
@@ -499,7 +497,7 @@ button:focus-visible {
 .btn-reset {
   background-color: var(--color-blanco);
   color: var(--color-error);
-  border: 1px solid var(--color-error);
+  border: 0.0625rem solid var(--color-error);
   margin-top: 0.75rem;
 }
 
